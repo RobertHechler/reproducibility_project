@@ -1,1 +1,13 @@
-# reproducibility_project
+# Project for LDP Reproducibility Course
+
+#### Description: 
+This repository contains my course project for The Living Data Project's Productivity and Reproducibility in Ecology and Evolution course. I am creating an immaginative project using the Iris dataset.
+
+#### This repository is organized as follows:
+- 00_raw data
+- 01_scripts
+- 04_manuscript
+
+#### Where do the raw data come from?
+- I used the popular Iris dataset from Ronald Fisher's 1936 paper titled The use of multiple measurements in taxonomic problems.
+- Run 1_save_iris_data.R to save the raw data
