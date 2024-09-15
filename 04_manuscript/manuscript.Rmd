@@ -1,0 +1,18 @@
+---
+title: "My manuscript"
+output: pdf_document
+date: "2024-09-13"
+bibliography: references.bib
+#csl: ecology-letters.csl
+#csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Nonlinear population dynamics of fisheries
+
+This is my manuscript. Biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
+
+# References
