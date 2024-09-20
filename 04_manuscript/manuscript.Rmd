@@ -2,30 +2,39 @@
 title: "My fake manuscript"
 output: pdf_document
 date: "2024-09-13"
-bibliography: references.bib
+bibliography:
+- references.bib
+- grateful-refs.bib
+
 #csl: ecology-letters.csl
 #csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+library(grateful)
+library(knitr)
 ```
 
 ## Introduction
 This is my fake manuscript using iris dataset. I actually work on fish such as pink salmon (*Oncorhynchus gorbuscha*) but this manuscript is not about salmon. Here I am just demonstrating the cool skills I learned in class :)
 
-I learned how to cite papers in rmd. For example, biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
+I learned how to cite papers in rmd. For example, biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009]. 
 
-Next I am going to show that I can embed code into my rmd file. Check out the following plot
-
-
-```{r echo = FALSE, results = 'asis'}
-library(knitr)
-data <- read.csv("../00_rawdata/iris.csv")
+## Methods
+```{r, echo = FALSE}
+grateful::cite_packages(output = "paragraph", out.dir = ".")
 ```
 
 
-```{r sepal_width_plot, echo=FALSE, fig.width=8, fig.height=5}
+## Results
+```{r echo = FALSE, results = 'asis'}
+data <- read.csv("../00_rawdata/iris.csv")
+```
+
+I found that iris species vary in their sepal width (Figure 1). Pretend that this is another results sentence. And that this is another results sentence with super interesting results.
+
+```{r sepal_width_plot, echo=FALSE, fig.width=4, fig.height=3.5}
 library(ggplot2)
 
 # Create the plot
@@ -44,11 +53,22 @@ ggplot(data, aes(x = Species, y = Sepal.Width, fill = Species)) +
         plot.caption = element_text(hjust = 0) 
   )
 ```
-**Figure 1.** Boxplot of Sepal Width for Each Iris Species.
+
+**Figure 1.** Boxplot of sepal width for each iris species.
+
+
+
+Wow look how cool that boxplot looks. It would be great to see a summary stats table. Oh wait, the LDP team taught me how to do that. Let's see if i can figure it out.
+
+
+**Table 1.** Summary statistics of the iris dataset.
 ```{r, echo = FALSE}
-kable(summary(data), align = "lllll", caption = "Summary statistics of the iris dataset")
+kable(summary(data), align = "lllll")
 
 ```
+
+## Discussion
+That's it for my sweet iris paper! Thanks for reading. 
 
 
 ## References
