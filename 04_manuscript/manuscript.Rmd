@@ -1,5 +1,5 @@
 ---
-title: "My manuscript"
+title: "My fake manuscript"
 output: pdf_document
 date: "2024-09-13"
 bibliography: references.bib
@@ -11,8 +11,17 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Nonlinear population dynamics of fisheries
+## Introduction
 
-This is my manuscript. Biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
+This is my fake manuscript using iris dataset. I actually work on fish such as pink salmon (*Oncorhynchus gorbuscha*) but this manuscript is not about salmon. Here I demonstrate the cool skills I learned in class :)
 
-# References
+I also learned how to cite papers like this: Biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
+
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+data <- read.csv("../00_rawdata/iris.csv")
+kable(summary(data), align = "lllll", caption = "Summary statistics of the iris dataset") 
+
+```
+
+## References
