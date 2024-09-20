@@ -8,20 +8,47 @@ bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
 ## Introduction
+This is my fake manuscript using iris dataset. I actually work on fish such as pink salmon (*Oncorhynchus gorbuscha*) but this manuscript is not about salmon. Here I am just demonstrating the cool skills I learned in class :)
 
-This is my fake manuscript using iris dataset. I actually work on fish such as pink salmon (*Oncorhynchus gorbuscha*) but this manuscript is not about salmon. Here I demonstrate the cool skills I learned in class :)
+I learned how to cite papers in rmd. For example, biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
 
-I also learned how to cite papers like this: Biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
+Next I am going to show that I can embed code into my rmd file. Check out the following plot
+
 
 ```{r echo = FALSE, results = 'asis'}
 library(knitr)
 data <- read.csv("../00_rawdata/iris.csv")
-kable(summary(data), align = "lllll", caption = "Summary statistics of the iris dataset") 
+```
+
+
+```{r sepal_width_plot, echo=FALSE, fig.width=8, fig.height=5}
+library(ggplot2)
+
+# Create the plot
+ggplot(data, aes(x = Species, y = Sepal.Width, fill = Species)) +
+  geom_boxplot() +
+  labs(title = "",
+       x = "Species",
+       y = "Sepal width (cm)",
+  caption = "") +
+  theme_minimal() +
+  theme(
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),  
+    axis.line = element_line(color = "black"),
+     legend.position = "none",
+        plot.caption = element_text(hjust = 0) 
+  )
+```
+**Figure 1.** Boxplot of Sepal Width for Each Iris Species.
+```{r, echo = FALSE}
+kable(summary(data), align = "lllll", caption = "Summary statistics of the iris dataset")
 
 ```
+
 
 ## References
