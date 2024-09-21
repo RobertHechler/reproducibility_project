@@ -17,17 +17,21 @@ library(knitr)
 ```
 
 ## Introduction
+
 This is my fake manuscript using iris dataset. I actually work on fish such as pink salmon (*Oncorhynchus gorbuscha*) but this manuscript is not about salmon. Here I am just demonstrating the cool skills I learned in class :)
 
-I learned how to cite papers in rmd. For example, biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009]. 
+I learned how to cite papers in rmd. For example, biodiversity is rapidly changing [@blowes_geography_2019], and glmms are useful for understanding these changes [@bolker_generalized_2009].
 
 ## Methods
+
+I am using the Iris dataset [@fisher1936] for my LDP project as an example.
+
 ```{r, echo = FALSE}
 grateful::cite_packages(output = "paragraph", out.dir = ".")
 ```
 
-
 ## Results
+
 ```{r echo = FALSE, results = 'asis'}
 data <- read.csv("../00_rawdata/iris.csv")
 ```
@@ -56,19 +60,17 @@ ggplot(data, aes(x = Species, y = Sepal.Width, fill = Species)) +
 
 **Figure 1.** Boxplot of sepal width for each iris species.
 
-
-
 Wow look how cool that boxplot looks. It would be great to see a summary stats table. Oh wait, the LDP team taught me how to do that. Let's see if i can figure it out.
 
-
 **Table 1.** Summary statistics of the iris dataset.
+
 ```{r, echo = FALSE}
 kable(summary(data), align = "lllll")
 
 ```
 
 ## Discussion
-That's it for my sweet iris paper! Thanks for reading. 
 
+That's it for my sweet iris paper! Thanks for reading.
 
 ## References
