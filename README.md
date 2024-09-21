@@ -1,7 +1,7 @@
-# Project for LDP Reproducibility Course
+# Project for The Canadian Institute of Ecology and Evolution Living Data Project's Reproducibility Course
 
 #### Description: 
-This repository contains my course project for The Living Data Project's Productivity and Reproducibility in Ecology and Evolution course. I am creating an immaginative project using the Iris dataset.
+This repository contains my course project for The Living Data Project's Productivity and Reproducibility in Ecology and Evolution course. I am creating an immaginative project using the Iris dataset to practice.
 
 #### This repository is organized as follows:
 - 00_raw data
