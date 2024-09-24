@@ -12,68 +12,71 @@ affiliation:
 
 
 output: prereg::prereg_pdf
+bibliography: references.bib
 ---
 
 <!-- To keep pre-registrations to a reasonable length for readers, we recommend answers fit within a single page .pdf document, roughly 3200 characters. Read more about this here: https://aspredicted.org/messages/why_limits.php -->
 
-
 ## Data collection
+
 <!-- Have any data been collected for this study already? (Note: "Yes" is not an accepted answer.) -->
 
 **No**, no data have been collected for this study yet.
 
-
 ## Hypothesis
+
 <!-- What's the main question being asked or hypothesis being tested in this study? -->
 
 > This is a fake example for the LDP class. I am using the iris dataset and hypothesize that sepal length varies with species
 
-
 ## Dependent variable
+
 <!-- Describe the key dependent variable(s) specifying how they will be measured. -->
 
-> Sepal length will be measured in cm using a ruler 
+> Sepal length will be measured in cm using a ruler
 
 ## Conditions
+
 <!-- How many and which conditions will participants be assigned to? -->
 
 > Conditions include different iris species
 
-
-
 ## Analyses
+
 <!-- Specify exactly which analyses you will conduct to examine the main question/hypothesis. -->
 
-> I will use an anova to compare group means 
-
+> I will use an anova to compare group means. Doing a glmm could be fun too [@bolker2009]
 
 ## Outliers and exclusions
+
 <!-- Describe exactly how outliers will be defined and handled, and your precise rule(s) for excluding observations. -->
 
 > I won't remove any outliers
 
 ## Sample size
+
 <!-- How many observations will be collected or what will determine sample size? No need to justify decision, but be precise about _exactly_ how the number will be determined. -->
 
 > I will measure 150 iris plants per species
 
-
 ## Other
+
 <!-- Anything else you would like to pre-register? (e.g., secondary analyses, variables collected for exploratory purposes, unusual analyses planned?) -->
 
-> This is so fun :) 
+> This is so fun :)
 
 ## Study type
+
 Finally. For record keeping purposes, please tell us the type of study you are pre-registering.
 
-* Class project for the Living Data Project
+-   Class project for the Living Data Project
 
+## References
 
-
-# References
-## 
+```{=tex}
 \vspace{-2pc}
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{-1in}
 \setlength{\parskip}{8pt}
+```
 \noindent
