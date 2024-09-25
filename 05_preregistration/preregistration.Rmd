@@ -17,11 +17,11 @@ bibliography: references.bib
 
 <!-- To keep pre-registrations to a reasonable length for readers, we recommend answers fit within a single page .pdf document, roughly 3200 characters. Read more about this here: https://aspredicted.org/messages/why_limits.php -->
 
+## Project description
 
-## Project description 
 <!-- Verbal description of the effect I am trying to replicate -->
 
-I made up a fake project for the LDP course using the iris dataset. I could, for example, look at how sepal width varies with iris species.
+I made up a fake project for the LDP course using the iris dataset. This is where I would give a broad overview of what my project is. For example, in my fake project, I am studying the effects of environmental drivers on plant functional traits across different habitats. Using data from various plant species, we aim to understand how factors such as temperature, soil composition, and moisture levels influence traits like length and width of sepals and petals.
 
 ## Data collection
 
@@ -33,46 +33,49 @@ I made up a fake project for the LDP course using the iris dataset. I could, for
 
 <!-- What's the main question being asked or hypothesis being tested in this study? -->
 
-This is a fake example for the LDP class. I am using the iris dataset and hypothesize that sepal length varies with species
+I am reiterating that this is a fake example for the LDP class using the iris dataset. In my fake example I hypothesize that environmental drivers, specifically temperature and nitrogen levels, will significantly influence sepal and petal length and width. Specifically, I hypothesize that 1) Higher temperatures will correlate with increased sepal and petal sizes, reflecting adaptations to maximize reproductive success in warmer climates, and 2) plants in nitrogen-rich soils exhibiting larger sepal and petal dimensions compared to those in nitrogen-poor soils.
 
 ## Dependent variable
 
 <!-- Describe the key dependent variable(s) specifying how they will be measured. -->
 
-Sepal length will be measured in cm using a ruler
+My depdent variables are sepal length and width, and petal length and width. I will measure these traits in cm using a ruler. I will measure these traits every day.
 
 ## Conditions
 
 <!-- How many and which conditions will participants be assigned to? -->
 
-Conditions include different iris species
+I will establish plots that represent a range of temperatures (e.g., low = 8C, moderate = 15C, and high = 22C) and nitrogen rich (10g NO3) and poor (0g NO3) plots to simulate different climatic conditions. Each plot will be replicated 3 times per condition and species.
 
 ## Analyses
 
 <!-- Specify exactly which analyses you will conduct to examine the main question/hypothesis. -->
 
-I will use an anova to compare group means. Doing a glmm could be fun too [@bolker2009]
+Generalized linear mixed models will be used to estimate parameters associated with the hypotheses listed above. I will perform this analysis in a bayesian framework using uninformative priors for all models. I will plot the parameter estimates and 95% credible intervals for each fixed effect. I want to model sepal length, sepal width, petal length and petal width as a function of temperature and nitrogen levels, while accounting for variations between different species and plots. This would look like: sepal_length ~ temperature + nitrogen + (1 | species) + (1 | plot). I simply love doing glmms because they are powerful [@bolker2009].
+
+I will conduct an ANOVA to examine the effects of temperature and nitrogen levels on sepal and petal dimensions between species (i.e. compares means of species 1 to species 2 in same condition).
 
 ## Outliers and exclusions
 
 <!-- Describe exactly how outliers will be defined and handled, and your precise rule(s) for excluding observations. -->
 
-I won't remove any outliers
+I will only exclude plants from my analysis if they do not survive the entire experimental duration. Once data is collected, I will not remove any outliers as variation among species and conditions is the topic of interest. 
 
 ## Sample size
 
 <!-- How many observations will be collected or what will determine sample size? No need to justify decision, but be precise about _exactly_ how the number will be determined. -->
 
-I will measure 150 iris plants per species
+I will measure 50 iris plants per species per experimental condition
 
 ## Other
+
 <!-- Anything else you would like to pre-register? (e.g., secondary analyses, variables collected for exploratory purposes, unusual analyses planned?) -->
 
-This is so fun :)
+I might perform follow-up analyses based on unexpected patterns that I find. Such exploratory analyses, however, will be reported as such.  
 
 ## Study type
 
-This is a fake class project for the Living Data Project's Reproducibility course
+My fake study is an experimental, observational comparative study. My study was inspired by the ideas of the students who I TA and is aiming to understand the relationship between environmental factors and plant traits across different species and conditions.
 
 ## References
 
