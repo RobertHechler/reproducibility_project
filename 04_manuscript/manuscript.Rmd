@@ -6,12 +6,14 @@ bibliography:
 - references.bib
 - grateful-refs.bib
 
-#csl: ecology-letters.csl
-#csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+# using renv to ensure proper versions of packages
+renv::init()
+renv::restore()
+
 # load necessary packages
 library(grateful)
 library(knitr)
