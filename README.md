@@ -18,3 +18,6 @@ This repository contains my course project for The Canadian Institute of Ecology
 - Run [05_preregistration/preregistration.Rmd](./05_preregistration/preregistration.Rmd) to knit a pdf of my fake preregistration
 
 
+#### Notes
+Software versions used in my analysis are captured by renv and listed in [this lockfile](./renv.lock). [Here is a summary](https://rstudio.github.io/renv/articles/renv.html) of how to use renv when reproducing my analysis.
+
