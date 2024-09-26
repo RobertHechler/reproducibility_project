@@ -6,6 +6,7 @@ bibliography:
 - references.bib
 - grateful-refs.bib
 
+knit: (function(inputFile, encoding) {rmarkdown::render(inputFile, encoding = encoding, output_dir = "rendered") })
 ---
 
 ```{r setup, include=FALSE}
@@ -45,7 +46,7 @@ I found that iris species vary in their sepal width (Figure 1). Pretend that thi
 ```{r sepal_width_plot, echo=FALSE, fig.width=4, fig.height=3.3}
 library(ggplot2)
 
-# Create the plot
+# Create a boxplot showing sepdal width for the 3 species 
 ggplot(data, aes(x = Species, y = Sepal.Width, fill = Species)) +
   geom_boxplot() +
   labs(title = "",
@@ -71,7 +72,6 @@ Wow look how cool that boxplot looks. It would be great to see a summary stats t
 ```{r, echo = FALSE}
 # create a table of summary stats
 kable(summary(data), align = "lllll")
-
 ```
 
 ## Discussion
