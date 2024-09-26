@@ -1,7 +1,7 @@
-# Project for The Canadian Institute of Ecology and Evolution Living Data Project's Reproducibility Course
+# Imaginative project investigating environmental drivers of iris functional traits
 
 #### Description: 
-This repository contains my course project for The Living Data Project's Productivity and Reproducibility in Ecology and Evolution course. I am creating an immaginative project that investigates environmental drivers of functional traits using the popular Iris dataset.
+This repository contains my course project for The Canadian Institute of Ecology and Evolution Living Data Project's Productivity and Reproducibility in Ecology and Evolution course. I am creating an immaginative project that investigates environmental drivers of functional traits using the popular Iris dataset.
 
 #### This repository is organized as follows:
 - [00_rawdata](./00_rawdata)
