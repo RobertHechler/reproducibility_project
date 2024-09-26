@@ -1,18 +1,18 @@
 ---
-title           : "My fake preregistration for LDP course"
+title           : "Fake project investigating the effects of environmental drivers on iris functional traits"
 date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
 
 author: 
-  - name        : Anonymous person
+  - name        : Anonymous
     affiliation : 1
 
 affiliation:
   - id          : 1
     institution : Living Data Project
 
-
-output: prereg::prereg_pdf
+output: pdf_document
 bibliography: references.bib
+
 ---
 
 <!-- To keep pre-registrations to a reasonable length for readers, we recommend answers fit within a single page .pdf document, roughly 3200 characters. Read more about this here: https://aspredicted.org/messages/why_limits.php -->
@@ -79,10 +79,3 @@ My fake study is an experimental, observational comparative study. My study was 
 
 ## References
 
-```{=tex}
-\vspace{-2pc}
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{-1in}
-\setlength{\parskip}{8pt}
-```
-\noindent
