@@ -14,7 +14,7 @@ This repository contains my course project for The Living Data Project's Product
 - Either re-generate data by running [/01_scripts/1_save_iris_data.R](./01_scripts/1_save_iris_data.R) or use data that is supplied in [00_rawdata/iris.csv](./00_rawdata/iris.csv)
 
 #### Generate a manuscript or preregistration
-- Run [04_manuscript](./04_manuscript.Rmd) to knit a pdf of my fake manuscript
+- Run [04_manuscript/manuscript.Rmd](./04_manuscript/manuscript.Rmd) to knit a pdf of my fake manuscript
 - Run [05_preregistration/preregistration.Rmd](./05_preregistration/preregistration.Rmd) to knit a pdf of my fake preregistration
 
 
