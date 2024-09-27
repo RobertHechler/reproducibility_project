@@ -2,13 +2,9 @@
 title           : "Fake project investigating the effects of environmental drivers on iris functional traits"
 date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
 
-author: 
-  - name        : Anonymous
-    affiliation : 1
+author: Anonymous ecologist 
 
-affiliation:
-  - id          : 1
-    institution : Living Data Project
+
 
 output: pdf_document
 bibliography: references.bib
