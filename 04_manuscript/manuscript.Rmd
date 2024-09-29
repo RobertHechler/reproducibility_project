@@ -8,6 +8,7 @@ bibliography:
 
 knit: (function(inputFile, encoding) {rmarkdown::render(inputFile, encoding = encoding, output_dir = "rendered") })
 ---
+<!-- line 9 in my YAML directs the output pdf of my manuscript to the rendered directory -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
