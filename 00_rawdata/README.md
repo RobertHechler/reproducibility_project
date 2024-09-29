@@ -2,6 +2,7 @@ This directory contains the raw data used in my project, specifically the Iris d
 
 Contents
 - iris.csv: The raw data file containing the Iris dataset. This file includes measurements of iris flowers and their species classification.
+- run 01_scripts/1_save_iris_data.R to regenerate the raw data
 
 Dataset Overview
 - The Iris dataset consists of 150 samples from three species of iris flowers (Iris setosa, Iris versicolor, and Iris virginica). Each sample includes four features (measurements) and a label (species).
