@@ -21,6 +21,7 @@ library(knitr)
 ```
 
 ## Introduction
+
 This is my fake manuscript using iris dataset. I actually work on fish such as pink salmon (*Oncorhynchus gorbuscha*) but this manuscript is not about salmon. Here I am just demonstrating the cool skills I learned in class :)
 
 I learned how to cite papers in rmd. For example, biodiversity is rapidly changing [@blowes2019], and glmms are useful for understanding these changes [@bolker2009].
