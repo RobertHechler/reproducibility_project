@@ -12,7 +12,7 @@ knit: (function(inputFile, encoding) {rmarkdown::render(inputFile, encoding = en
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 # using renv to ensure proper versions of packages
-renv::init()
+#renv::init()
 renv::restore()
 
 # load necessary packages
