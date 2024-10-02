@@ -6,6 +6,8 @@ bibliography:
 - references.bib
 - grateful-refs.bib
 
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/refs/heads/master/council-of-science-editors.csl"
+
 knit: (function(inputFile, encoding) {rmarkdown::render(inputFile, encoding = encoding, output_dir = "rendered") })
 ---
 <!-- line 9 in my YAML directs the output pdf of my manuscript to the rendered directory -->
@@ -32,7 +34,7 @@ I learned how to cite papers in rmd. For example, biodiversity is rapidly changi
 I am using the Iris dataset [@fisher1936] for my LDP project as an example.
 
 ```{r, echo = FALSE}
-# create citations
+# create citations using the grateful package
 grateful::cite_packages(output = "paragraph", out.dir = ".")
 ```
 

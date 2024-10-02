@@ -7,6 +7,8 @@ author: Anonymous ecologist
 output: pdf_document
 bibliography: references.bib
 
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/refs/heads/master/council-of-science-editors.csl"
+
 ---
 
 <!-- To keep pre-registrations to a reasonable length for readers, we recommend answers fit within a single page .pdf document, roughly 3200 characters. Read more about this here: https://aspredicted.org/messages/why_limits.php -->
